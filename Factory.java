@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 
 public class Factory {
 
-    public static Map<String, Pokemon> Mapa(int opcion) {
+    public static Map<String, Pokemon> crearMapa(int opcion) {
         switch (opcion) {
             case 1:
                 return new HashMap<>();
