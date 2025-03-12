@@ -1,16 +1,18 @@
+import java.util.List;
+
 public class Pokemon {
     private String nombre;
     private int numero;
     private String type1;
     private String type2;
     private String clasificacion;
-    private int altura;
-    private int peso;
-    private String habilidad;
+    private double altura;
+    private double peso;
+    private List<String> habilidad;
     private int gen;
     private boolean legendario;
 
-    public Pokemon(String nombre, int numero, String type1, String type2, String clasificacion, int altura, int peso, String habilidad, int gen, boolean legendario) {
+    public Pokemon(String nombre, int numero, String type1, String type2, String clasificacion, double altura, double peso, List<String> habilidad, int gen, boolean legendario) {
         this.nombre = nombre;
         this.numero = numero;
         this.type1 = type1;
@@ -43,15 +45,15 @@ public class Pokemon {
         return clasificacion;
     }
 
-    public int getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public int getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public String getHabilidad() {
+    public List<String> getHabilidad() {
         return habilidad;
     }
 
@@ -65,9 +67,9 @@ public class Pokemon {
     
     @Override
     public String toString() {
-        return "Nombre: " + nombre + "numero" + numero + ", Tipo1: " + type1 + ", Tipo2: " + type2 +
+        return " Nombre: " + nombre + ", numero" + numero + ", Tipo1: " + type1 + ", Tipo2: " + type2 +
                ", Clasificacion: " + clasificacion + ", Altura: " + altura + ", Peso: " + peso +
-               ", Habilidades: " + habilidad + ", Generacion: " + gen + "Legendario: " + legendario;
+               ", Habilidades: " + habilidad + ", Generacion: " + gen + ", Legendario: " + legendario;
     }
 
 }
